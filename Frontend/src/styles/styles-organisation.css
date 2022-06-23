@@ -1,0 +1,284 @@
+main .single-organisation-top-block{
+	margin-bottom: 20px;
+    padding: 20px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    border: 1px solid hsla(0,0%,100%,.12);
+    text-align: center;
+    text-align: -webkit-center;
+}
+
+
+main .single-organisation-top-block .organisation-logo {
+    border-radius: 50%; 
+    border: 2px solid hsla(0,0%,100%,.12);
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-color: hsla(0,0%,100%,.1);
+}
+
+main .single-organisation-top-block .organisation-title {
+    margin: 20px 0px 10px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+main .single-organisation-top-block .organisation-title span{
+    line-height: 1;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+main .single-organisation-top-block .organisation-title img{
+    width: 25px;
+    margin-left: 10px;
+}
+
+
+main .single-organisation-top-block .organisation-description {
+	max-width: 700px;
+	margin-bottom: 10px;
+}
+
+main .single-organisation-top-block .organisation-description .links {
+	display: flex;
+	justify-content: center;
+}
+
+main .single-organisation-top-block .organisation-description .links .link{
+	display: block;
+	margin: 10px;
+	padding: 6px;
+	width: 30px;
+	height: 30px;
+	background: #fff;
+	border-radius: 50%;
+	transition: background 0.3s;
+}
+
+main .single-organisation-top-block .organisation-description .links .link:hover{
+	background: #ffffffb0;
+}
+
+
+main .single-organisation-top-block .organisation-description span{
+    line-height: 1.3;
+    font-size: 17px;
+    color: #86919d;
+}
+
+
+
+main .single-organisation-section-buttons-block {
+	margin: 0px auto;
+	margin-bottom: 20px;
+	max-width: 800px;
+	text-align: center;
+}
+
+main .single-organisation-section-buttons-block button {
+	margin: 5px 10px;
+    padding: 0 30px;
+    height: 40px;
+    color: inherit;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1;
+    background: transparent;
+    border-radius: 30px;
+    border: 1px solid hsla(0,0%,100%,.12);
+    cursor: pointer;
+    transition: color 0.3s, background 0.3s;
+}
+
+main .single-organisation-section-buttons-block button.active, 
+main .single-organisation-section-buttons-block button:hover{
+    background: #fff;
+    color: #000;
+}
+
+
+main .single-organisation-proposals-block {
+	margin: 0px auto;
+	max-width: 700px;
+}
+
+
+main .single-organisation-proposals-block .create-proposal-btn {
+	display: block;
+	margin-bottom: 20px;
+	padding: 10px 0px;
+	width: 100%;
+	background: hsla(0,0%,100%,.15);
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 50px;
+    border: 1px solid hsla(0,0%,100%,.12);
+    transition: background 0.3s, border 0.3s;
+    cursor: pointer;
+}
+
+main .single-organisation-proposals-block .create-proposal-btn:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid hsla(0,0%,100%,.4);
+}
+
+
+
+main .single-organisation-proposals-block .proposal-card{
+	margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid hsla(0,0%,100%,.12);
+    transition: background 0.3s, border 0.3s;
+    cursor: pointer;
+}
+
+main .single-organisation-proposals-block .proposal-card:hover{
+    background-color: hsla(0,0%,100%,.05);
+    border: 1px solid hsla(0,0%,100%,.4);
+}
+
+
+main .single-organisation-proposals-block .proposal-card button {
+	margin-bottom: 10px;
+    padding: 5px 15px;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    background: black;
+    border-radius: 30px;
+    border: none;
+}
+
+
+main .single-organisation-proposals-block .proposal-card button.active {
+	background: #5ab05a;
+}
+main .single-organisation-proposals-block .proposal-card button.completed {
+	background: #b09d5a;
+}
+
+
+main .single-organisation-proposals-block .proposal-card .title {
+	line-height: 1;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+main .single-organisation-proposals-block .proposal-card .description {
+	line-height: 1.3;
+    font-size: 19px;
+    color: #86919d;
+    margin-bottom: 20px;
+}
+
+main .single-organisation-proposals-block .proposal-card .author,
+main .single-organisation-proposals-block .proposal-card .expiration-date {
+	line-height: 1.5;
+	font-size: 17px;
+}
+
+main .single-organisation-proposals-block .proposal-card .author span:first-child,
+main .single-organisation-proposals-block .proposal-card .expiration-date span:first-child{
+	font-weight: 600;
+	color: #86919d;
+}
+
+
+
+main .single-organisation-members-block {
+	margin: 0px auto;
+	max-width: 500px;
+}
+
+
+main .single-organisation-members-block .members-list,
+main .single-organisation-members-block .add-member-block {
+    padding: 20px;
+    border-radius: 15px;
+    border: 1px solid hsla(0,0%,100%,.12);
+}
+
+main .single-organisation-members-block p.title{
+	font-size: 24px;
+	font-weight: 600;
+	margin-bottom: 15px;
+}
+
+main .single-organisation-members-block ul{
+	margin-bottom: 20px;
+}
+
+main .single-organisation-members-block ul li{
+	display: flex;
+	margin-bottom: 15px;
+	align-items: center;
+}
+
+main .single-organisation-members-block ul li span{
+	line-height: 1;
+    font-size: 19px;
+    color: #86919d;
+}
+
+main .single-organisation-members-block ul li .copy,
+main .single-organisation-members-block ul li .remove,{
+	display: block;
+	margin: 0px 10px;
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	transition: background 0.3s;
+	cursor: pointer;
+}
+
+main .single-organisation-members-block .add-member-block {
+	margin-top: 20px;
+}
+
+
+main .single-organisation-members-block .add-member-block input{
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	width: 100%;
+	color: #fff;
+	font-size: 17px;
+	background: inherit;
+	outline: none;
+	border-radius: 6px;
+    border: 1px solid hsla(0,0%,100%,.12);
+}
+
+main .single-organisation-members-block .add-member-block input:focus{
+	border: 1px solid hsla(0,0%,100%,.52);
+}
+
+main .single-organisation-members-block .add-member-block .add-member-btn {
+	display: block;
+	padding: 10px 0px;
+	width: 100%;
+	background: hsla(0,0%,100%,.15);
+	color: #fff;
+	font-size: 17px;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 50px;
+    border: 1px solid hsla(0,0%,100%,.12);
+    transition: background 0.3s, border 0.3s;
+    cursor: pointer;
+}
+
+main .single-organisation-members-block .add-member-block .add-member-btn:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid hsla(0,0%,100%,.4);
+}
+

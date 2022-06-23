@@ -1,0 +1,265 @@
+main .single-proposal-block {
+	display: flex;
+	justify-content: space-between;
+	flex-flow: row-reverse;
+	align-items: flex-start;
+}
+
+@media (max-width: 920px) {
+    main .single-proposal-block {
+        display: block;
+    }
+    main .single-proposal-block .sidebar,
+    main .single-proposal-block .content {
+    	width: 100% !important;
+    }
+    main .single-proposal-block .content {
+    	margin-bottom: 20px;
+    }
+
+    main .single-proposal-block .sidebar {
+    	min-width: 10px !important;
+    }
+}
+
+
+
+main .single-proposal-block .sidebar {
+	min-width: 350px;
+}
+
+main .single-proposal-block .section{
+	margin-bottom: 20px;
+	padding: 20px;
+    padding-bottom: 15px;
+    border-radius: 15px;
+    border: 1px solid hsla(0,0%,100%,.12);
+}
+
+main .single-proposal-block .sidebar .title {
+	font-size: 20px;
+	font-weight: 700;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+main .single-proposal-block .sidebar .general-info{
+	
+}
+
+main .single-proposal-block .sidebar .general-info ul{
+	margin-bottom: 20px;
+}
+
+main .single-proposal-block .sidebar .general-info ul li{
+	margin-bottom: 10px;
+	align-items: center;
+}
+
+main .single-proposal-block .sidebar .general-info ul li span{
+	line-height: 1;
+    font-size: 16px;
+    font-weight: 600;
+    color: #86919d;
+}
+
+
+main .single-proposal-block .sidebar .general-info ul li span:nth-child(2){
+	color: #fff;
+	float: right;
+}
+
+
+
+
+main .single-proposal-block .sidebar .results{
+	
+}
+
+main .single-proposal-block .sidebar .results .option {
+	margin-bottom: 30px;
+}
+
+main .single-proposal-block .sidebar .results .option div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+main .single-proposal-block .sidebar .results .option div span.option-title{
+	font-size: 16px;
+	font-weight: 500;
+}
+
+main .single-proposal-block .sidebar .results .option div div .votes{
+	margin-right: 10px;
+}
+
+
+main .single-proposal-block .sidebar .results .option div.bars{
+	display: block;
+	width: 100%;
+	position: relative;
+}
+
+main .single-proposal-block .sidebar .results .option div.bars .bar {
+	margin-top: 10px;
+	height: 7px;
+	border-radius: 3.5px;
+	width: 100%;
+	max-width: 100%;
+	background: #86919d78;
+	position: absolute;
+}
+
+
+main .single-proposal-block .sidebar .results .option div.bars .bar2 {
+	background: #5ab05a;
+}
+
+
+
+
+
+main .single-proposal-block .sidebar .voters{
+	
+}
+
+main .single-proposal-block .sidebar .voters .scroll {
+	height: 200px;
+	overflow-y: scroll;
+}
+
+main .single-proposal-block .sidebar .voters ul.scroll{
+	margin-bottom: 20px;
+}
+
+main .single-proposal-block .sidebar .voters ul.scroll li{
+	display: flex;
+	margin-bottom: 15px;
+	align-items: center;
+}
+
+main .single-proposal-block .sidebar .voters ul.scroll li span{
+	line-height: 1;
+    font-size: 16px;
+    color: #86919d;
+}
+
+main .single-proposal-block .sidebar .voters ul.scroll li .copy{
+	display: block;
+	margin: 0px 10px;
+	width: 19px;
+	height: 19px;
+	border-radius: 50%;
+	transition: background 0.3s;
+	cursor: pointer;
+}
+
+main .single-proposal-block .sidebar .voters ul li img {
+
+}
+
+
+
+main .single-proposal-block .content {
+	width: calc(100% - 370px);
+}
+
+main .single-proposal-block .content .proposal-content{
+    min-height: 400px;
+}
+
+main .single-proposal-block .content .proposal-content .title {
+	font-size: 30px;
+	font-weight: 700;
+	margin-bottom: 10px;
+}
+
+main .single-proposal-block .content .proposal-content .status-author{
+	display: flex;
+}
+
+main .single-proposal-block .content .proposal-content .status{
+	margin-right: 20px;
+}
+
+main .single-proposal-block .content .proposal-content .author,
+main .single-proposal-block .content .proposal-content .status {
+	line-height: 1.5;
+	font-size: 17px;
+	margin-bottom: 12px;
+}
+
+main .single-proposal-block .content .proposal-content .author span:first-child,
+main .single-proposal-block .content .proposal-content .status span:first-child {
+	font-weight: 600;
+	color: #86919d;
+}
+
+main .single-proposal-block .content .proposal-content .author a{
+	cursor: pointer;
+	margin-left: 8px;
+	display: inline-block;
+}
+
+main .single-proposal-block .content .proposal-content .status button {
+	margin-bottom: 10px;
+    padding: 5px 15px;
+    color: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1;
+    background: black;
+    border-radius: 30px;
+    border: none;
+}
+
+
+main .single-proposal-block .content .proposal-content .status button.active {
+	background: #5ab05a;
+}
+
+main .single-proposal-block .content .proposal-content .status button.completed {
+	background: #b09d5a;
+}
+
+
+main .single-proposal-block .content .proposal-content .description {
+	margin-bottom: 10px;
+	color: #86919d;
+	font-size: 18px;
+	line-height: 1.3;
+}
+
+
+
+main .single-proposal-block .content .voting-section .title {
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 700;
+}
+
+main .single-proposal-block .content .voting-section .options-block ul li{
+    margin-bottom: 10px;
+	padding: 15px 20px;
+	color: #fff;
+	background: hsla(0,0%,100%,.15);
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 50px;
+    border: 1px solid hsla(0,0%,100%,.12);
+    transition: background 0.3s, border 0.3s;
+    cursor: pointer;
+}
+
+main .single-proposal-block .content .voting-section .options-block ul li:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid hsla(0,0%,100%,.4);
+}

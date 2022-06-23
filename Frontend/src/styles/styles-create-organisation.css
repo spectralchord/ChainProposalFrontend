@@ -1,0 +1,65 @@
+main .create-organisation-block {
+	max-width: 600px;
+	margin: 0px auto;
+	padding: 20px;
+    border-radius: 15px;
+    border: 1px solid hsla(0,0%,100%,.12);
+}
+
+main .create-organisation-block .title {
+	font-size: 28px;
+	font-weight: 700;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+main .create-organisation-block form label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 17px;
+	font-weight: 600;
+	color: #ffffffbd;
+}
+
+main .create-organisation-block form input[type="text"]{
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	width: 100%;
+	color: #fff;
+	font-size: 15px;
+	background: inherit;
+	outline: none;
+	border-radius: 6px;
+    border: 1px solid hsla(0,0%,100%,.12);
+}
+
+
+main .create-organisation-block form input[type="file"]{
+	margin-bottom: 20px;
+}
+
+main .create-organisation-block form input[type="text"]:focus{
+	border: 1px solid hsla(0,0%,100%,.52);
+}
+
+main .create-organisation-block form .create-btn {
+	display: block;
+	margin-bottom: 10px;
+	padding: 15px 0px;
+	width: 100%;
+	background: hsla(0,0%,100%,.15);
+	color: #fff;
+	font-size: 18px;
+	font-weight: 600;
+	text-align: center;
+	border-radius: 6px;
+    border: 1px solid hsla(0,0%,100%,.12);
+    transition: background 0.3s, border 0.3s;
+    cursor: pointer;
+}
+
+main .create-organisation-block form .create-btn:hover{
+    color: #000;
+    background-color: #fff;
+    border: 1px solid hsla(0,0%,100%,.4);
+}

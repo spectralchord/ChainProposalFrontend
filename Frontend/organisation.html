@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ChainProposals - Organisation</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./src/styles/styles.css">
+	<link rel="stylesheet" href="./src/styles/styles-organisation.css">
+	<script src="https://unpkg.com/aelf-sdk@3.2.40/dist/aelf.umd.js"></script>
+	<script src="https://kit.fontawesome.com/0957957083.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<a href="/">
+				<div class="logo">ChainProposals</div>
+			</a>
+			<div style=" display: flex; align-items: center;">
+				<div id="error-no-extension" class="hidden" style="color: red; margin-right:20px"></div>
+				<div class="hidden" id="wallet-address-block"></div>
+				<button class="hidden" id="disconnect-wallet">Logout</button>
+				<button id="connect-wallet">
+					Connect wallet
+				</button>
+			</div>
+		</header>
+
+		<main>
+			<div id="loading" class="loading">
+				<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+			</div>
+			<div id="error-block" class="hidden error-block fs-15 pd-20 mb-20"></div>
+			<div id="single-organisation" class="hidden">
+				<div id="single-organisation-top-block" class="single-organisation-top-block"></div>
+				<div id="organisation-buttons" class="single-organisation-section-buttons-block">
+					<button id="proposals-btn" class="active">Proposals</button>
+					<button id="members-btn">Members</button>
+				</div>
+
+				<div id="proposals-list-block" class="single-organisation-proposals-block">
+					<a id="create-proposal-btn">
+						<button class="create-proposal-btn">Create new proposal</button>
+					</a>
+					<div id="loading-proposals" class="loading">
+						<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+					</div>
+					<div id="error-block-proposals" class="hidden error-block fs-15 pd-20 mb-20"></div>
+					<div id="proposals-list" class="proposals-list"></div>
+				</div>
+
+				<div id="members-list-block" class="hidden single-organisation-members-block">
+					<div id="loading-members" class="loading">
+						<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+					</div>
+
+					<div id="error-block-members" class="hidden error-block fs-15 pd-20 mb-20"></div>
+					<div class="members-list">
+						<div id="members-list-ul" class="hidden"></div>
+
+						<div id="error-remove-member" class="hidden error-block fs-15 pd-10 mb-10"></div>
+						<div id="info-remove-member" class="hidden info-block fs-15 pd-10 mb-10"></div>
+					</div>
+					<div class="add-member-block">
+						<p class="title" style="text-align: center;">Add new member</p>
+						<input id="member-wallet" type="text" placeholder="Member wallet address">
+						<div id="error-add-member" class="hidden error-block fs-15 pd-10 mb-10"></div>
+						<div id="info-add-member" class="hidden info-block fs-15 pd-10 mb-10"></div>
+						<button id="add-member-btn" class="add-member-btn">Add</button>
+					</div>
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div class="copyright">
+				© 2022 ChainProposals
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		const page = "organisations-page";
+	</script>
+	<script src="./src/scripts/aelf-extension.js"></script>
+	<script src="./src/scripts/functions.js"></script>
+	<script src="./src/scripts/organisation.js"></script>
+</body>
+</html>

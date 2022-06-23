@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>ChainProposals</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700;900&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="./src/styles/styles.css">
+	<script src="https://unpkg.com/aelf-sdk@3.2.40/dist/aelf.umd.js"></script>
+	<script src="https://kit.fontawesome.com/0957957083.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<a href="/">
+				<div class="logo">ChainProposals</div>
+			</a>
+			<div style=" display: flex; align-items: center;">
+				<div id="error-no-extension" class="hidden" style="color: red; margin-right:20px"></div>
+				<div class="hidden" id="wallet-address-block"></div>
+				<button class="hidden" id="disconnect-wallet">Logout</button>
+				<button id="connect-wallet">
+					Connect wallet
+				</button>
+			</div>
+		</header>
+
+		<main>
+			<div class="organisation-title-btn">
+				<h1>Organisations</h1>
+				<a href="/create-organisation.html">
+					<button>Create new organisation</button>
+				</a>
+			</div>
+
+			<div id="loading" class="loading">
+				<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+			</div>
+			<div id="error-block" class="hidden error-block fs-15 pd-20 mb-20"></div>
+			<div id="organisations-block" class="hidden organisations-block"></div>
+		</main>
+
+		<footer>
+			<div class="copyright">
+				© 2022 ChainProposals
+			</div>
+		</footer>
+	</div>
+
+	<script>
+		const page = "home-page";
+	</script>
+	<script src="./src/scripts/utils.js"></script>
+	<script src="./src/scripts/functions.js"></script>
+	<script src="./src/scripts/aelf-extension.js"></script>
+	<script src="./src/scripts/home.js"></script>
+</body>
+</html>
