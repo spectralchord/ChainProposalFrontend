@@ -84,7 +84,7 @@ Also, writing a contract in C# was something new and interesting for me.
 
 ## What's next for ChainProposals
 
-TBD
+Add the ability to specify conditions that voters must meet to be able to vote on proposals
 
 
 # UI
